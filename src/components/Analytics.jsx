@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Analytics = () => {
   return (
-    <div className="analytics-body">
+    <div className="analytics-body" id="analytics-body">
       <div className="w-full bg-white py-16 px-4">
         <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
           <img
@@ -66,22 +66,14 @@ const Analytics = () => {
           <div className="flex flex-col ">
             {/* <p className="text-[#00df9a] font-bold ">Add Data</p> */}
             <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2">
-              Register Staff, Clients, Owners, Property, Lease and Branch
+              View Staff and Property
             </h1>
             <div className="flex ">
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
-                Get Started
+                View Staff
               </button>
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
-                Get Started
-              </button>
-            </div>
-            <div className="flex ">
-              <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
-                Get Started
-              </button>
-              <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
-                Get Started
+                View Property
               </button>
             </div>
           </div>

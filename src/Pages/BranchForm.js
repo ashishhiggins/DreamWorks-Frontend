@@ -3,6 +3,8 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import "../Styles/Staff.css";
+import videobg from "../assets/formbg.mp4";
 
 function BranchForm() {
   const [branchData, setBranchData] = useState({});
@@ -29,6 +31,7 @@ function BranchForm() {
 
   return (
     <div>
+    <video src={videobg} autoPlay muted loop id='video'/>
     <Navbar />
     <form className='container mx-auto py-10' onSubmit={handleSubmit}>
   <div className='text-center'>

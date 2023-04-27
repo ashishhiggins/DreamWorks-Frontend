@@ -6,7 +6,7 @@ import "../Styles/Hero.css";
 const Hero = () => {
   return (
     <div className='text-white' >
-<video src={videobg} autoPlay muted loop id='video'/>
+    <video src={videobg} autoPlay muted loop id='video'/>
 
     {/* <video autoPlay mute loop id='video'>
       <source src={videobg} type='video/mp4'/>

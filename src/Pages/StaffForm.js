@@ -3,6 +3,8 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import "../Styles/Staff.css";
+import videobg from "../assets/formbg.mp4";
 
 function Form() {
   const [formData, setFormData] = useState({
@@ -54,14 +56,16 @@ function Form() {
 
   return (
     <div>
+    <video src={videobg} autoPlay muted loop id='video'/>
 <Navbar />
-<form className="container mx-auto py-10" onSubmit={handleSubmit}>
+
+<form className="container px-5 my-10" onSubmit={handleSubmit}>
   <div className="text-center">
     <h1 className="text-4xl font-bold mb-5 text-white">Staff Registration</h1>
   </div>
   <div className="mb-4">
     <input
-      className="border-2 border-gray-300 w-1/4 p-2 rounded-md m-2"
+      className="border-2 border-gray-300 w-1/5 p-2 rounded-md m-2"
       type="text"
       placeholder="Enter Full Name"
       name="fname"
@@ -69,7 +73,7 @@ function Form() {
       onChange={handleInputChange}
     />
     <input
-      className="border-2 border-gray-300 p-2 w-1/4 rounded-md m-2"
+      className="border-2 border-gray-300 p-2 w-1/5 rounded-md m-2"
       type="text"
       placeholder="Enter Staff Number"
       name="staffno"
@@ -77,7 +81,7 @@ function Form() {
       onChange={handleInputChange}
     />
     <input
-      className="border-2 border-gray-300 p-2 w-1/4 rounded-md m-2"
+      className="border-2 border-gray-300 p-2 w-1/5 rounded-md m-2"
       type="text"
       placeholder="Enter Position"
       name="sposition"
@@ -94,6 +98,7 @@ function Form() {
       value={formData.sex}
       onChange={handleInputChange}
     />
+    <label className='text-white text-2xl'>Date of birth</label>
     <input
       className="border-2 border-gray-300 p-2 w-1/4 rounded-md m-2"
       type="date"
@@ -115,7 +120,7 @@ function Form() {
   </div>
   <div className="mb-4">
     <input
-      className="border-2 border-gray-300 p-2 w-1/4 rounded-md m-2"
+      className="border-2 border-gray-300 p-2 w-1/5 rounded-md m-2"
       type="text"
       placeholder="Branch Number"
       name="brno"
@@ -123,7 +128,7 @@ function Form() {
       onChange={handleInputChange}
     />
     <input
-      className="border-2 border-gray-300 p-2 w-1/4 rounded-md m-2"
+      className="border-2 border-gray-300 p-2 w-1/5 rounded-md m-2"
       type="text"
       placeholder="Telephone Number"
       name="mno1"
@@ -131,7 +136,7 @@ function Form() {
       onChange={handleInputChange}
     />
     <input
-      className="border-2 border-gray-300 p-2 w-1/4 rounded-md m-2"
+      className="border-2 border-gray-300 p-2 w-1/5 rounded-md m-2"
       type="text"
       placeholder="Supervisor Id"
       name="super_id"
@@ -140,6 +145,7 @@ function Form() {
     />
   </div>
   <div className="mb-4">
+  <label className='text-white text-2xl'>Start Date</label>
     <input
       className="border-2 border-gray-300 p-2 w-1/3 rounded-md m-2"
       type="date"

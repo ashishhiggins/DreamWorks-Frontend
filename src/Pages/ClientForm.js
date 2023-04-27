@@ -3,6 +3,8 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import "../Styles/Staff.css";
+import videobg from "../assets/formbg.mp4";
 
 function ClientForm() {
   const [clientData, setClientData] = useState({});
@@ -29,6 +31,7 @@ function ClientForm() {
 
   return (
 <div>
+<video src={videobg} autoPlay muted loop id='video'/>
 <Navbar />
 
 
@@ -46,6 +49,7 @@ function ClientForm() {
       </div>
       <div className='mb-4'>
         <input className='border-2 border-gray-300 p-2 w-1/3 rounded-md m-2' type='text2' placeholder='Registered by' name='manageno' onChange={handleChange} />
+        <label className='text-white text-2xl'>Date Registered</label>
       <input className='border-2 border-gray-300 p-2 w-1/3 rounded-md m-2' type='date' placeholder='Date Registered' name='rdate' onChange={handleChange} />
       </div>
       <div className='mb-4'>

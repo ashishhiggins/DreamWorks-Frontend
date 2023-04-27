@@ -1,8 +1,7 @@
 import React from 'react';
 import {
-  FaDribbbleSquare,
   FaFacebookSquare,
-  FaGithubSquare,
+  FaLinkedin,
   FaInstagram,
   FaTwitterSquare,
 } from 'react-icons/fa';
@@ -12,13 +11,12 @@ const Footer = () => {
     <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300'>
       <div>
         <h1 className='w-full text-3xl font-bold text-[#00df9a]'>Dream Home</h1>
-        <p className='py-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit ullam iste repellat consequatur libero reiciendis, blanditiis accusantium.</p>
+        <p className='py-4'>By taking an intermediate role between owners who wish to rent out their furnished property and clients of DreamHome who require to rent furnished property for a fixed period.</p>
         <div className='flex justify-between md:w-[75%] my-6'>
             <FaFacebookSquare size={30} />
             <FaInstagram size={30} />
             <FaTwitterSquare size={30} />
-            <FaGithubSquare size={30} />
-            <FaDribbbleSquare size={30} />
+            <FaLinkedin size={30} />
         </div>
       </div>
       <div className='lg:col-span-2 flex justify-between mt-6'>

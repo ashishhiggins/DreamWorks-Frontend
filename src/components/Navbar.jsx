@@ -17,11 +17,11 @@ const Navbar = () => {
       </Link>
      
       <ul className='hidden md:flex'>
-        <li className='p-4'>Home</li>
-        <li className='p-4'>Company</li>
-        <li className='p-4'>Resources</li>
-        <li className='p-4'>About</li>
-        <li className='p-4'>Contact</li>
+      <Link to="/" className='home-link'><li className='p-4'>Home</li></Link>
+        
+        <li className='p-4'><a href="/#analytics-body">Features</a></li>
+        <li className='p-4'><a href="/#membership">Membership</a></li>
+        <li className='p-4'><a href="/#contact">Contact</a></li>
       </ul>
       <div onClick={handleNav} className='block md:hidden'>
           {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}

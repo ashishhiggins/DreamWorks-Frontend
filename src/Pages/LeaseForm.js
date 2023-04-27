@@ -3,6 +3,8 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import "../Styles/Staff.css";
+import videobg from "../assets/formbg.mp4";
 
 function LeaseForm() {
   const [formData, setFormData] = useState({
@@ -31,6 +33,7 @@ function LeaseForm() {
 
   return (
     <div>
+    <video src={videobg} autoPlay muted loop id='video'/>
 <Navbar />
 
 
