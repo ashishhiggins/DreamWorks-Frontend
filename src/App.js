@@ -24,6 +24,8 @@ import BranchView from "./Pages/BranchView";
 import PropertyView from "./Pages/PropertyView";
 import StaffView from "./Pages/StaffView";
 import PropertyDetail from "./Pages/PropertyDetail";
+import CommentForm from './Pages/CommentForm';
+import LeaseView from './Pages/LeaseView';
 
 function App() {
   return (
@@ -33,19 +35,22 @@ function App() {
 <ToastContainer />
 <Routes>
  {/* Done */}
- 
+        <Route path="/branch-view" element={<BranchView />} />
+        <Route path="/staff-view" element={<StaffView />} />
+
+        <Route path="/property-view" element={<PropertyView />} />
+        <Route path="/lease-view" element={<LeaseView />} />
+        <Route path="/property-detail" element={<PropertyDetail />} /> 
+
         <Route path="/staff" element={<StaffForm />} />
         <Route path="/client" element={<ClientForm />} />
         <Route path="/owner" element={<OwnerForm />} />
         <Route path="/branch" element={<BranchForm />} />
         <Route path="/property" element={<PropertyForm />} />
         <Route path="/lease" element={<LeaseForm />} />
+        <Route path="/comments" element={<CommentForm />} />
 
-        <Route path="/branch-view" element={<BranchView />} />
-        <Route path="/staff-view" element={<StaffView />} />
-
-        <Route path="/property-view" element={<PropertyView />} />
-        <Route path="/property-detail" element={<PropertyDetail />} /> 
+        
          
         
         <Route path="/" element={<Home />} />

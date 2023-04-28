@@ -20,14 +20,14 @@ const Analytics = () => {
             </h1>
             <div className="flex ">
             
-            {/* Done */}
+         
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
               <Link to="/staff" className="">
                 Staff Registration
                 </Link>
               </button>
              
-{/* Not Working */}
+
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
               <Link to="/client" className="">
                 Client Registration
@@ -35,14 +35,13 @@ const Analytics = () => {
               </button>
             </div>
             <div className="flex ">
-    {/* Done */}
+  
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
               <Link to="/owner" className="">
                 Owner Registration
                 </Link>
               </button>
 
-      {/* Done */}
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
               <Link to="/branch" className="">
                 Branch Registration
@@ -69,7 +68,7 @@ const Analytics = () => {
 
               {/* Not Working */}
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
-              <Link to="/lease" className="">
+              <Link to="/comments" className="">
                 Add Comments
                 </Link>
               </button>
@@ -97,7 +96,7 @@ const Analytics = () => {
                 </Link>
               </button>
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
-              <Link to="/property-view" className="">
+              <Link to="/lease-view" className="">
                 View Lease
                 </Link>
               </button>

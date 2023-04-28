@@ -26,14 +26,9 @@ function PropertyForm() {
   };
 
   const handleInputChange = (event) => {
-    const target = event.target;
-    const name = target.name;
-    const value = target.value;
 
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+    setFormData({ ...formData, [event.target.name]: event.target.value });
+    
   };
 
   return (
@@ -51,10 +46,17 @@ function PropertyForm() {
         </div>
         <div className="mb-4">
           <input
-            className="border-2 border-gray-300 p-2 w-1/2 rounded-md"
+            className="border-2 border-gray-300 p-2 w-1/3 rounded-md"
             type="text"
             placeholder="Enter Property Number"
             name="pnumber"
+            onChange={handleInputChange}
+          />
+          <input
+            className="border-2 border-gray-300 p-2 w-1/3 rounded-md"
+            type="text"
+            placeholder="Enter House Number"
+            name="hnumber"
             onChange={handleInputChange}
           />
         </div>
@@ -83,14 +85,7 @@ function PropertyForm() {
             name="rent"
             onChange={handleInputChange}
           />
-          {/* Update This */}
-          <input
-            className="border-2 border-gray-300 p-3 m-3 w-1/5 rounded-md"
-            type="text"
-            placeholder="House No."
-            name="rent"
-            onChange={handleInputChange}
-          />
+       
         </div>
 
         <div className="mb-4">
