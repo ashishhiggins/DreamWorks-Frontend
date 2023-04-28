@@ -20,13 +20,14 @@ const Analytics = () => {
             </h1>
             <div className="flex ">
             
+            {/* Done */}
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
               <Link to="/staff" className="">
                 Staff Registration
                 </Link>
               </button>
              
-
+{/* Not Working */}
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
               <Link to="/client" className="">
                 Client Registration
@@ -34,11 +35,14 @@ const Analytics = () => {
               </button>
             </div>
             <div className="flex ">
+    {/* Done */}
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
               <Link to="/owner" className="">
                 Owner Registration
                 </Link>
               </button>
+
+      {/* Done */}
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
               <Link to="/branch" className="">
                 Branch Registration
@@ -46,14 +50,27 @@ const Analytics = () => {
               </button>
             </div>
             <div className="flex ">
+
+      {/* Not Working */}
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
               <Link to="/property" className="">
                 Property Registration
                 </Link>
               </button>
+
+
+              {/* Not Working */}
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
               <Link to="/lease" className="">
                 Lease Creation
+                </Link>
+              </button>
+
+
+              {/* Not Working */}
+              <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
+              <Link to="/lease" className="">
+                Add Comments
                 </Link>
               </button>
             </div>
@@ -70,10 +87,19 @@ const Analytics = () => {
             </h1>
             <div className="flex ">
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
-                View Staff
+              <Link to="/branch-view" className="">
+                View Branch/Staff
+                </Link>
               </button>
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
+              <Link to="/property-view" className="">
                 View Property
+                </Link>
+              </button>
+              <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
+              <Link to="/property-view" className="">
+                View Lease
+                </Link>
               </button>
             </div>
           </div>

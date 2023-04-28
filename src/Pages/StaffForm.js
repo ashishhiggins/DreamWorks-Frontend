@@ -4,7 +4,7 @@ import axios from "axios";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import "../Styles/Staff.css";
-import videobg from "../assets/formbg.mp4";
+import videobg from "../assets/formbg2.mp4";
 
 function Form() {
   const [formData, setFormData] = useState({
@@ -55,12 +55,14 @@ function Form() {
   };
 
   return (
-    <div>
+    <div className='bg-cover '>
     <video src={videobg} autoPlay muted loop id='video'/>
 <Navbar />
-
-<form className="container px-5 my-10" onSubmit={handleSubmit}>
-  <div className="text-center">
+<div className='flex justify-center'>
+<form className="ml-10 px-10 my-10 py-10 bg-white bg-opacity-10 rounded-3xl overflow-hidden w-full max-w-5xl shadow-lg m-4 lg:m-6" onSubmit={handleSubmit} style={{
+            backdropFilter: 'blur(10px)',
+          }}>
+  <div className="text-center my-5">
     <h1 className="text-4xl font-bold mb-5 text-white">Staff Registration</h1>
   </div>
   <div className="mb-4">
@@ -110,7 +112,7 @@ function Form() {
   </div>
   <div className="mb-4">
     <input
-      className="border-2 border-gray-300 p-2 w-1/2 rounded-md m-2"
+      className="border-2 border-gray-300 p-2 w-2/3 rounded-md m-2"
       type="text"
       placeholder="Salary"
       name="salary"
@@ -155,7 +157,7 @@ function Form() {
       onChange={handleInputChange}
     />
     <input
-      className="border-2 border-gray-300 p-2 w-1/3 rounded-md m-2"
+      className="border-2 border-gray-300 p-2 w-1/5 rounded-md m-2"
       type="text"
       placeholder="Manager Bonus"
       name="bonus"
@@ -167,6 +169,7 @@ function Form() {
   <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' type='submit'>Submit</button>
       </div>
     </form>
+    </div>
     <Footer/>
 </div>
   );

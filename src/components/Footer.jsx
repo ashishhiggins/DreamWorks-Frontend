@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300'>
       <div>
-        <h1 className='w-full text-3xl font-bold text-[#00df9a]'>Dream Home</h1>
+        <h1 className='w-full text-3xl font-bold text-white'>Dream Home</h1>
         <p className='py-4'>By taking an intermediate role between owners who wish to rent out their furnished property and clients of DreamHome who require to rent furnished property for a fixed period.</p>
         <div className='flex justify-between md:w-[75%] my-6'>
             <FaFacebookSquare size={30} />

@@ -20,6 +20,10 @@ import Home from './Pages/Home';
 import Page404 from "./Pages/Page404";
 import OwnerForm from "./Pages/OwnerForm";
 import BranchForm from "./Pages/BranchForm";
+import BranchView from "./Pages/BranchView";
+import PropertyView from "./Pages/PropertyView";
+import StaffView from "./Pages/StaffView";
+import PropertyDetail from "./Pages/PropertyDetail";
 
 function App() {
   return (
@@ -34,10 +38,15 @@ function App() {
         <Route path="/client" element={<ClientForm />} />
         <Route path="/owner" element={<OwnerForm />} />
         <Route path="/branch" element={<BranchForm />} />
-
-{/* Todo */}
         <Route path="/property" element={<PropertyForm />} />
         <Route path="/lease" element={<LeaseForm />} />
+
+        <Route path="/branch-view" element={<BranchView />} />
+        <Route path="/staff-view" element={<StaffView />} />
+
+        <Route path="/property-view" element={<PropertyView />} />
+        <Route path="/property-detail" element={<PropertyDetail />} /> 
+         
         
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Page404 />} />
