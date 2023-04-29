@@ -67,8 +67,8 @@ function BranchForm() {
        <div className="text-white text-2xl">{node.ptype}</div>
        <div className="text-white text-2xl">{node.rent}</div>
        <div className="text-white text-2xl">{node.address}</div>
-       <div className="text-white text-2xl">{node.rooms}</div>
-       <div className="text-white text-2xl">{node.isavailable}</div>
+       <div className="text-white text-2xl">Rooms: {node.rooms}</div>
+       {/* <div className="text-white text-2xl">Is Available: {node.isavailable}</div> */}
                 </div>
               </li>
             );

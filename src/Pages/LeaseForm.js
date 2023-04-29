@@ -55,32 +55,31 @@ function LeaseForm() {
     <h1 className='text-4xl font-bold mb-5 text-white'>Lease Form</h1>
   </div>
   <div className='mb-4'>
-    <input className='border-2 border-gray-300 p-2 w-1/3 rounded-md' type='text' placeholder='Enter Lease Id' name='leaseid' value={formData.leaseid} onChange={handleChange} />
-    <input className='border-2 border-gray-300 p-2 w-1/3 rounded-md m-3' type='text' placeholder='Client Number' name='cno' value={formData.cno} onChange={handleChange} />
+    <input className='border-2 border-gray-300 p-2 w-1/4 rounded-md mr-2' type='text' placeholder='Enter Lease Id' name='leaseid' value={formData.leaseid} onChange={handleChange} />
+    <input className='border-2 border-gray-300 p-2 w-1/4 rounded-md mr-2' type='text' placeholder='Client Number' name='cno' value={formData.cno} onChange={handleChange} />
   </div>
   <div className='mb-4'>
-    <input className='border-2 border-gray-300 p-2 w-1/2 rounded-md' type='text' placeholder='Property Number' name='pno' value={formData.pno} onChange={handleChange} />
+    <input className='border-2 border-gray-300 p-2 w-1/4 rounded-md mr-2' type='text' placeholder='Property Number' name='pno' value={formData.pno} onChange={handleChange} />
   </div>
   <div className='mb-4'>
-    <input className='border-2 border-gray-300 p-2 w-1/3 rounded-md' type='text' placeholder='Monthly Rent' name='mrent' value={formData.mrent} onChange={handleChange} />
-    <input className='border-2 border-gray-300 p-2 w-1/3 rounded-md m-3' type='text' placeholder='Payment Method' name='paymentmethod' value={formData.paymentmethod} onChange={handleChange} />
+    <input className='border-2 border-gray-300 p-2 w-1/4 rounded-md mr-2' type='text' placeholder='Monthly Rent' name='mrent' value={formData.mrent} onChange={handleChange} />
+    <input className='border-2 border-gray-300 p-2 w-1/4 rounded-md mr-2' type='text' placeholder='Payment Method' name='paymentmethod' value={formData.paymentmethod} onChange={handleChange} />
   </div>
   <div className='mb-4 flex justify-between'>
+    <div className='flex '>
     <div className='flex flex-col'>
       <label className='text-white text-2xl'>Rent Start</label>
-      <input className='border-2 border-gray-300 p-2 rounded-md' type='date' placeholder='Rent Start' name='rdate' value={formData.rdate} onChange={handleChange} />
-
-
+      <input className='border-2 border-gray-300 p-2 rounded-md mr-2' type='date' placeholder='Rent Start' name='rdate' value={formData.rdate} onChange={handleChange} />
+</div>
+ <div className='flex flex-col'>
     <label className='text-white text-2xl'>Rent Finish</label>
-      <input className='border-2 border-gray-300 p-2 rounded-md' type='date' placeholder='Rent Finish' name='fdate' value={formData.fdate} onChange={handleChange} />
+      <input className='border-2 border-gray-300 p-2 rounded-md mr-2' type='date' placeholder='Rent Finish' name='fdate' value={formData.fdate} onChange={handleChange} />
     </div>
-
+</div>
   </div>
   <div className='mb-4'>
-    <input className='border-2 border-gray-300 p-2 w-1/4 rounded-md' type='text' placeholder='Duration' name='duration' value={formData.duration} onChange={handleChange} />
-  </div>
-  <div className='mb-4'>
-    <input className='border-2 border-gray-300 p-2 w-1/4 rounded-md' type='text' placeholder='Deposit' name='deposit' value={formData.deposit} onChange={handleChange} />
+    <input className='border-2 border-gray-300 p-2 w-1/4 rounded-md mr-2' type='text' placeholder='Duration' name='duration' value={formData.duration} onChange={handleChange} />
+    <input className='border-2 border-gray-300 p-2 w-1/4 rounded-md mr-2' type='text' placeholder='Deposit' name='deposit' value={formData.deposit} onChange={handleChange} />
   </div>
   <div className='text-center'>
     <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' type='submit'>Submit</button>

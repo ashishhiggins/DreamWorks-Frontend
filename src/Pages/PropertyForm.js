@@ -46,14 +46,14 @@ function PropertyForm() {
         </div>
         <div className="mb-4">
           <input
-            className="border-2 border-gray-300 p-2 w-1/3 rounded-md"
+            className="border-2 border-gray-300 p-2 w-1/4 rounded-md mr-2"
             type="text"
             placeholder="Enter Property Number"
             name="pnumber"
             onChange={handleInputChange}
           />
           <input
-            className="border-2 border-gray-300 p-2 w-1/3 rounded-md"
+            className="border-2 border-gray-300 p-2 w-1/4 rounded-md mr-2"
             type="text"
             placeholder="Enter House Number"
             name="hnumber"
@@ -79,7 +79,7 @@ function PropertyForm() {
 
         <div className="mb-4">
           <input
-            className="border-2 border-gray-300 p-2 w-1/5 rounded-md"
+            className="border-2 border-gray-300 p-2 w-1/4 rounded-md mr-2"
             type="text"
             placeholder="Rent"
             name="rent"
@@ -132,7 +132,7 @@ function PropertyForm() {
         </div>
         <div className="mb-4">
           <input
-            className="border-2 border-gray-300 p-2 w-1/3 rounded-md"
+            className="border-2 border-gray-300 p-2 w-1/4 rounded-md mr-2"
             type="text"
             placeholder="Branch Number"
             name="brno"

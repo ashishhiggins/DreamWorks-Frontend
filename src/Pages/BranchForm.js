@@ -50,9 +50,9 @@ function BranchForm() {
   </div>
 
   <div className='mb-4'>
-    <input className='border-2 border-gray-300 p-2 w-1/4 rounded-md mx-2' type='text2' placeholder='Mobile number' name='mobileno1' onChange={handleChange} />
-    <input className='border-2 border-gray-300 p-2 w-1/4 rounded-md mx-2' type='text2' placeholder='Alternate Mobile number' name='mobileno2' onChange={handleChange} />
-    <input className='border-2 border-gray-300 p-2 w-1/4 rounded-md mx-2' type='text2' placeholder='Alternate Mobile number' name='mobileno3' onChange={handleChange} />
+    <input className='border-2 border-gray-300 p-2 w-2/9 rounded-md mx-2' type='text2' placeholder='Mobile number' name='mobileno1' onChange={handleChange} />
+    <input className='border-2 border-gray-300 p-2 w-2/9 rounded-md mx-2' type='text2' placeholder='Alternate Mobile number' name='mobileno2' onChange={handleChange} />
+    <input className='border-2 border-gray-300 p-2 w-2/9 rounded-md mx-2' type='text2' placeholder='Alternate Mobile number' name='mobileno3' onChange={handleChange} />
   </div>
   <div className='text-center'>
     <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' type='submit'>Submit</button>
