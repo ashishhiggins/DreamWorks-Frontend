@@ -50,7 +50,7 @@ const Analytics = () => {
             </div>
             <div className="flex ">
 
-      {/* Not Working */}
+
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
               <Link to="/property" className="">
                 Property Registration
@@ -58,15 +58,12 @@ const Analytics = () => {
               </button>
 
 
-              {/* Not Working */}
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
               <Link to="/lease" className="">
                 Lease Creation
                 </Link>
               </button>
 
-
-              {/* Not Working */}
               <button className="bg-black text-[#00df9a] w-1/3 rounded-md font-medium my-2 mx-2 py-3 hover:bg-[#00df9a] hover:text-black">
               <Link to="/comments" className="">
                 Add Comments
