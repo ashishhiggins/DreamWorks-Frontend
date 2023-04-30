@@ -14,7 +14,7 @@ function LeaseForm() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/apis/lease_filter/', leaseFilter);
+      const response = await axios.post('http://13.126.238.255:8000/apis/lease_filter/', leaseFilter);
       setleaseData(response.data);
     } catch (error) {
       console.error(error);
