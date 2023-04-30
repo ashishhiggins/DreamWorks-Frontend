@@ -22,7 +22,7 @@ function BranchForm() {
     console.log("Branch ID:", branchId);
 
     if (branchId) {
-      const apiUrl = `http://localhost:8000/apis/branch/${branchId}`;
+      const apiUrl = `http://13.126.238.255:8000/apis/branch/${branchId}`;
 
       axios
         .get(apiUrl)
