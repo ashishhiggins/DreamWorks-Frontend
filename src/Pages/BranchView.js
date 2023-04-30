@@ -11,7 +11,7 @@ function BranchForm() {
   const [branchData, setBranchData] = useState([]);
 
 // Get all branch ids and addresses from get api here 
-const apiUrl = "http://http://13.126.238.255:8000/apis/branch_list";
+const apiUrl = "http://13.126.238.255:8000/apis/branch_list";
   useEffect(() => {
     fetch(apiUrl, {
       method: "GET",
