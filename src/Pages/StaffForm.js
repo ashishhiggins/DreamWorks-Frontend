@@ -25,7 +25,7 @@ function Form() {
     event.preventDefault();
     console.log(formData);
     axios
-      .post("http://localhost:8000/apis/staff/register/", formData)
+      .post("http://13.126.238.255:8000/apis/staff/register/", formData)
       .then((response) => {
         console.log(response);
         toast.success("Data sent successfully");
