@@ -13,7 +13,7 @@ function PropertyForm() {
     event.preventDefault();
     console.log(formData);
     axios
-      .post("http://localhost:8000/apis/property/register/", formData)
+      .post("http://13.126.238.255:8000/apis/property/register/", formData)
       .then((response) => {
         console.log(response);
         toast.success("Data sent successfully");
