@@ -13,7 +13,7 @@ function ClientForm() {
     event.preventDefault();
     console.log(clientData);
     axios
-      .post("http://localhost:8000/apis/client/register/", clientData)
+      .post("http://13.126.238.255:8000/apis/client/register/", clientData)
       .then((response) => {
         console.log(response);
         toast.success("Data sent successfully");
