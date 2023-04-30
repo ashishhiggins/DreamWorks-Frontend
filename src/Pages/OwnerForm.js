@@ -13,7 +13,7 @@ function OwnerForm() {
     event.preventDefault();
     console.log(ownerData);
     axios
-      .post("http://localhost:8000/apis/owner/register/", ownerData)
+      .post("http://13.126.238.255/apis/owner/register/", ownerData)
       .then((response) => {
         console.log(response);
         toast.success("Data sent successfully");
