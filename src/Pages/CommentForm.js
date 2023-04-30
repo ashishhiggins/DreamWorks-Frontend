@@ -13,7 +13,7 @@ function CommentForm() {
     event.preventDefault();
     console.log(commentData);
     axios
-      .put("http://localhost:8000/apis/property_detail/comments/create/", commentData)
+      .put("http://13.126.238.255:8000/apis/property_detail/comments/create/", commentData)
       .then((response) => {
         console.log(response);
         toast.success("Data sent successfully");
