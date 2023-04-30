@@ -13,7 +13,7 @@ function BranchForm() {
     event.preventDefault();
     console.log(branchData);
     axios
-      .post("http://localhost:8000/apis/branch/", branchData)
+      .post("http://http://13.126.238.255:8000/apis/branch/", branchData)
       .then((response) => {
         console.log(response);
         toast.success("Data sent successfully");
