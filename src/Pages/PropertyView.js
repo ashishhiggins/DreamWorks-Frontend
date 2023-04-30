@@ -14,7 +14,7 @@ function BranchForm() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/apis/property_search/', propertyFilter);
+      const response = await axios.post('http://13.126.238.255:8000/apis/property_search/', propertyFilter);
       setpropertyData(response.data);
       // console.log(propertyData);
       
