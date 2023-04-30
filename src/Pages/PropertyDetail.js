@@ -22,7 +22,7 @@ function PropertyForm() {
     console.log("Property ID:", propertyId);
 
     if (propertyId) {
-      const apiUrl = `http://localhost:8000/apis/property_detail/${propertyId}`;
+      const apiUrl = `http://13.126.238.255:8000/apis/property_detail/${propertyId}`;
 
       axios
         .get(apiUrl)
